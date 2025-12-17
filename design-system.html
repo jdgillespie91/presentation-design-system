@@ -864,7 +864,7 @@
         <h1 class="typo-h1">Design System</h1>
         <p class="typo-p">Foundations and reusable slide templates</p>
       </div>
-      <span class="slide-number">1 / 17</span>
+      <span class="slide-number">1 / 20</span>
     </section>
 
     <!-- SLIDE 2: Foundations Introduction -->
@@ -875,16 +875,67 @@
         <p class="typo-p">The building blocks of this design system. Typography, colors, and spacing tokens that ensure visual consistency across all slides.</p>
         <p class="typo-p">These foundational elements are used to construct every layout template.</p>
       </div>
-      <span class="slide-number">2 / 17</span>
+      <span class="slide-number">2 / 20</span>
     </section>
 
-    <!-- SLIDE 3: Foundation - Typography -->
-    <section id="slide3" class="slide layout-two-col">
+    <!-- SLIDE 3: System Overview -->
+    <section id="slide3" class="slide layout-three-col">
+      <div class="slide-content">
+        <div class="header">
+          <div class="accent-line"></div>
+          <h2 class="typo-h2">System Overview</h2>
+          <p class="typo-muted">How the design system is organized</p>
+        </div>
+        <div class="columns">
+          <div class="col">
+            <h3 class="typo-h3">Foundations</h3>
+            <p class="typo-p">Building blocks used anywhere:</p>
+            <ul class="typo-list">
+              <li>Typography (h1, h2, h3, p, muted)</li>
+              <li>Text Elements (lists, quotes, links)</li>
+              <li>Code (inline, blocks)</li>
+              <li>Data (stats, metrics)</li>
+              <li>Utilities (glass, glow, divider)</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 class="typo-h3">Layouts</h3>
+            <p class="typo-p">Slide templates for arrangement:</p>
+            <ul class="typo-list">
+              <li>Title</li>
+              <li>Text</li>
+              <li>Two Column</li>
+              <li>Three Column</li>
+              <li>Image + Text</li>
+              <li>Bullets</li>
+              <li>Quote</li>
+              <li>Stats</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 class="typo-h3">Roadmap</h3>
+            <p class="typo-p">Planned additions:</p>
+            <ul class="typo-list">
+              <li>Badge/tag component</li>
+              <li>Card component</li>
+              <li>Table styles</li>
+              <li>Section divider layout</li>
+              <li>Timeline layout</li>
+              <li>Team/bio grid</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <span class="slide-number">3 / 20</span>
+    </section>
+
+    <!-- SLIDE 4: Foundation - Typography -->
+    <section id="slide4" class="slide layout-two-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
           <h2 class="typo-h2">Typography</h2>
-          <p class="typo-muted">The type scale and text styles used throughout the system</p>
+          <p class="typo-muted">Headings and body text styles</p>
         </div>
         <div class="columns">
           <div class="col-left">
@@ -900,10 +951,6 @@
               <span class="typo-label">h3</span>
               <span class="typo-h3">Heading Three</span>
             </div>
-            <div class="typo-section">
-              <span class="typo-label">blockquote</span>
-              <blockquote class="typo-blockquote">"Design is not just what it looks like. Design is how it works."</blockquote>
-            </div>
           </div>
           <div class="col-right">
             <div class="typo-section">
@@ -914,38 +961,30 @@
               <span class="typo-label">muted</span>
               <span class="typo-muted">Muted helper text for secondary information, hints, or captions</span>
             </div>
+          </div>
+        </div>
+      </div>
+      <span class="slide-number">4 / 20</span>
+    </section>
+
+    <!-- SLIDE 5: Foundation - Text Elements -->
+    <section id="slide5" class="slide layout-two-col">
+      <div class="slide-content">
+        <div class="header">
+          <div class="accent-line"></div>
+          <h2 class="typo-h2">Text Elements</h2>
+          <p class="typo-muted">Lists, quotes, and links</p>
+        </div>
+        <div class="columns">
+          <div class="col-left">
             <div class="typo-section">
-              <span class="typo-label">list</span>
+              <span class="typo-label">unordered list</span>
               <ul class="typo-list">
                 <li>First list item with bullet</li>
                 <li>Second list item example</li>
                 <li>Third item in the list</li>
               </ul>
             </div>
-            <div class="typo-section">
-              <span class="typo-label">inline code</span>
-              <p class="typo-p">Use <code class="typo-code">inline code</code> for technical terms and commands.</p>
-            </div>
-            <div class="typo-section">
-              <span class="typo-label">link</span>
-              <p class="typo-p">Use <a href="#" class="typo-link">links</a> for navigation and references.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <span class="slide-number">3 / 17</span>
-    </section>
-
-    <!-- SLIDE 4: Foundation - More Typography -->
-    <section id="slide4" class="slide layout-two-col">
-      <div class="slide-content">
-        <div class="header">
-          <div class="accent-line"></div>
-          <h2 class="typo-h2">More Foundations</h2>
-          <p class="typo-muted">Additional building blocks for content</p>
-        </div>
-        <div class="columns">
-          <div class="col-left">
             <div class="typo-section">
               <span class="typo-label">ordered list</span>
               <ol class="typo-list-ordered">
@@ -954,15 +993,36 @@
                 <li>Third numbered item</li>
               </ol>
             </div>
-            <div class="typo-section">
-              <span class="typo-label">stat / metric</span>
-              <div class="typo-stat">
-                <span class="typo-stat-value">98.5<span class="unit">%</span></span>
-                <span class="typo-stat-label">Uptime this month</span>
-              </div>
-            </div>
           </div>
           <div class="col-right">
+            <div class="typo-section">
+              <span class="typo-label">blockquote</span>
+              <blockquote class="typo-blockquote">"Design is not just what it looks like. Design is how it works."</blockquote>
+            </div>
+            <div class="typo-section">
+              <span class="typo-label">link</span>
+              <p class="typo-p">Use <a href="#" class="typo-link">links</a> for navigation and references.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="slide-number">5 / 20</span>
+    </section>
+
+    <!-- SLIDE 6: Foundation - Code & Data -->
+    <section id="slide6" class="slide layout-two-col">
+      <div class="slide-content">
+        <div class="header">
+          <div class="accent-line"></div>
+          <h2 class="typo-h2">Code & Data</h2>
+          <p class="typo-muted">Code snippets and metrics display</p>
+        </div>
+        <div class="columns">
+          <div class="col-left">
+            <div class="typo-section">
+              <span class="typo-label">inline code</span>
+              <p class="typo-p">Use <code class="typo-code">inline code</code> for technical terms and commands.</p>
+            </div>
             <div class="typo-section">
               <span class="typo-label">code block</span>
               <pre class="typo-code-block"><span class="keyword">function</span> <span class="function">greet</span>(name) {
@@ -971,45 +1031,94 @@
 }</pre>
             </div>
           </div>
+          <div class="col-right">
+            <div class="typo-section">
+              <span class="typo-label">stat / metric</span>
+              <div class="typo-stat">
+                <span class="typo-stat-value">98.5<span class="unit">%</span></span>
+                <span class="typo-stat-label">Uptime this month</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <span class="slide-number">4 / 17</span>
+      <span class="slide-number">6 / 20</span>
     </section>
 
-    <!-- SLIDE 5: Layouts Introduction -->
-    <section id="slide5" class="slide layout-text">
+    <!-- SLIDE 7: Foundation - Utilities -->
+    <section id="slide7" class="slide layout-two-col">
+      <div class="slide-content">
+        <div class="header">
+          <div class="accent-line"></div>
+          <h2 class="typo-h2">Utilities</h2>
+          <p class="typo-muted">Visual effects and decorative elements</p>
+        </div>
+        <div class="columns">
+          <div class="col-left">
+            <div class="typo-section">
+              <span class="typo-label">glass effect</span>
+              <div class="glass" style="padding: var(--space-4);">
+                <p class="typo-p">A frosted glass surface with blur and subtle border.</p>
+              </div>
+            </div>
+            <div class="typo-section">
+              <span class="typo-label">accent line</span>
+              <div class="accent-line"></div>
+              <p class="typo-muted" style="margin-top: var(--space-2);">A gradient accent line used to introduce sections.</p>
+            </div>
+          </div>
+          <div class="col-right">
+            <div class="typo-section">
+              <span class="typo-label">glow effect</span>
+              <div class="glass glow" style="padding: var(--space-4);">
+                <p class="typo-p">Adds a subtle violet glow around elements.</p>
+              </div>
+            </div>
+            <div class="typo-section">
+              <span class="typo-label">divider</span>
+              <div class="divider"></div>
+              <p class="typo-muted" style="margin-top: var(--space-2);">A subtle horizontal rule for separating content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="slide-number">7 / 20</span>
+    </section>
+
+    <!-- SLIDE 8: Layouts Introduction -->
+    <section id="slide8" class="slide layout-text">
       <div class="slide-content">
         <div class="accent-line"></div>
         <h2 class="typo-h2">Layouts</h2>
-        <p class="typo-p">Reusable slide templates designed for common presentation needs. Copy any layout and replace the content with your own.</p>
-        <p class="typo-p">Each layout is built from the foundational elements, ensuring visual consistency.</p>
+        <p class="typo-p">Reusable slide templates designed for common presentation needs. While foundations are individual content pieces, layouts define how those pieces are arranged on a slide.</p>
+        <p class="typo-p">Copy any layout and replace the content with your own.</p>
       </div>
-      <span class="slide-number">5 / 17</span>
+      <span class="slide-number">8 / 20</span>
     </section>
 
-    <!-- SLIDE 6: Layout Template - Title -->
-    <section id="slide6" class="slide layout-title">
+    <!-- SLIDE 9: Layout Template - Title -->
+    <section id="slide9" class="slide layout-title">
       <div class="slide-content">
         <div class="accent-line"></div>
         <h1 class="typo-h1">Your Presentation Title</h1>
         <p class="typo-p">Copy this slide and replace with your content</p>
       </div>
-      <span class="slide-number">6 / 17</span>
+      <span class="slide-number">9 / 20</span>
     </section>
 
-    <!-- SLIDE 7: Layout Template - Text -->
-    <section id="slide7" class="slide layout-text">
+    <!-- SLIDE 10: Layout Template - Text -->
+    <section id="slide10" class="slide layout-text">
       <div class="slide-content">
         <div class="accent-line"></div>
         <h2 class="typo-h2">Your Section Title</h2>
         <p class="typo-p">This is the text layout. It centers content vertically while keeping text left-aligned. Ideal for introducing sections, explaining concepts, or presenting key points.</p>
         <p class="typo-p">Copy this slide and replace the title and paragraphs with your own content.</p>
       </div>
-      <span class="slide-number">7 / 17</span>
+      <span class="slide-number">10 / 20</span>
     </section>
 
-    <!-- SLIDE 8: Layout Template - Two Column -->
-    <section id="slide8" class="slide layout-two-col">
+    <!-- SLIDE 11: Layout Template - Two Column -->
+    <section id="slide11" class="slide layout-two-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1027,11 +1136,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">8 / 17</span>
+      <span class="slide-number">11 / 20</span>
     </section>
 
-    <!-- SLIDE 9: Layout Template - Three Column -->
-    <section id="slide9" class="slide layout-three-col">
+    <!-- SLIDE 12: Layout Template - Three Column -->
+    <section id="slide12" class="slide layout-three-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1053,11 +1162,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">9 / 17</span>
+      <span class="slide-number">12 / 20</span>
     </section>
 
-    <!-- SLIDE 10: Layout Template - Image + Text -->
-    <section id="slide10" class="slide layout-image-text">
+    <!-- SLIDE 13: Layout Template - Image + Text -->
+    <section id="slide13" class="slide layout-image-text">
       <div class="slide-content">
         <div class="text-side">
           <div class="accent-line"></div>
@@ -1078,11 +1187,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">10 / 17</span>
+      <span class="slide-number">13 / 20</span>
     </section>
 
-    <!-- SLIDE 11: Layout Template - Image + Text (Reversed) -->
-    <section id="slide11" class="slide layout-image-text layout-image-text--reversed">
+    <!-- SLIDE 14: Layout Template - Image + Text (Reversed) -->
+    <section id="slide14" class="slide layout-image-text layout-image-text--reversed">
       <div class="slide-content">
         <div class="text-side">
           <div class="accent-line"></div>
@@ -1103,11 +1212,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">11 / 17</span>
+      <span class="slide-number">14 / 20</span>
     </section>
 
-    <!-- SLIDE 12: Layout Template - Big Quote -->
-    <section id="slide12" class="slide layout-quote">
+    <!-- SLIDE 15: Layout Template - Big Quote -->
+    <section id="slide15" class="slide layout-quote">
       <div class="slide-content">
         <span class="quote-mark">"</span>
         <blockquote class="typo-blockquote">Design is not just what it looks like and feels like. Design is how it works.</blockquote>
@@ -1116,11 +1225,11 @@
           <span class="typo-p">Co-founder, Apple Inc.</span>
         </div>
       </div>
-      <span class="slide-number">12 / 17</span>
+      <span class="slide-number">15 / 20</span>
     </section>
 
-    <!-- SLIDE 13: Layout Template - Stats/Metrics -->
-    <section id="slide13" class="slide layout-stats">
+    <!-- SLIDE 16: Layout Template - Stats/Metrics -->
+    <section id="slide16" class="slide layout-stats">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1142,11 +1251,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">13 / 17</span>
+      <span class="slide-number">16 / 20</span>
     </section>
 
-    <!-- SLIDE 14: Layout Template - Bullet List -->
-    <section id="slide14" class="slide layout-bullets">
+    <!-- SLIDE 17: Layout Template - Bullet List -->
+    <section id="slide17" class="slide layout-bullets">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1177,26 +1286,25 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">14 / 17</span>
+      <span class="slide-number">17 / 20</span>
     </section>
 
-    <!-- SLIDE 15: TODO Introduction -->
-    <section id="slide15" class="slide layout-text">
+    <!-- SLIDE 18: Roadmap Introduction -->
+    <section id="slide18" class="slide layout-text">
       <div class="slide-content">
         <div class="accent-line"></div>
-        <h2 class="typo-h2">TODO</h2>
+        <h2 class="typo-h2">Roadmap</h2>
         <p class="typo-p">Planned additions to the design system. These are foundations and layouts that would extend the system's capabilities.</p>
-        <p class="typo-p">Foundations are building blocks; layouts are reusable slide templates.</p>
       </div>
-      <span class="slide-number">15 / 17</span>
+      <span class="slide-number">18 / 20</span>
     </section>
 
-    <!-- SLIDE 16: TODO - Foundations -->
-    <section id="slide16" class="slide layout-three-col">
+    <!-- SLIDE 19: Roadmap - Foundations -->
+    <section id="slide19" class="slide layout-three-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
-          <h2 class="typo-h2">TODO: Foundations</h2>
+          <h2 class="typo-h2">Roadmap: Foundations</h2>
           <p class="typo-muted">Building blocks to add to the design system</p>
         </div>
         <div class="columns">
@@ -1229,15 +1337,15 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">16 / 17</span>
+      <span class="slide-number">19 / 20</span>
     </section>
 
-    <!-- SLIDE 17: TODO - Layouts -->
-    <section id="slide17" class="slide layout-three-col">
+    <!-- SLIDE 20: Roadmap - Layouts -->
+    <section id="slide20" class="slide layout-three-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
-          <h2 class="typo-h2">TODO: Layouts</h2>
+          <h2 class="typo-h2">Roadmap: Layouts</h2>
           <p class="typo-muted">Slide templates to add to the design system</p>
         </div>
         <div class="columns">
@@ -1270,7 +1378,7 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">17 / 17</span>
+      <span class="slide-number">20 / 20</span>
     </section>
 
   </div>
