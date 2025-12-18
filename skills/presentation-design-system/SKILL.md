@@ -19,6 +19,7 @@ This skill creates standalone HTML presentations. Each presentation is a single 
 | Quote | `layout-quote` | Testimonials, impactful quotes |
 | Stats | `layout-stats` | Key metrics, achievements |
 | Bullets | `layout-bullets` | Key points with descriptions |
+| Statements | `layout-statements` | Three independent points with equal weight |
 
 ## Presentation Structure
 
@@ -347,6 +348,47 @@ Key points with titles and descriptions.
   <span class="slide-number">9 / 10</span>
 </section>
 ```
+
+### Layout: Statements (`layout-statements`)
+
+Three independent statements displayed horizontally with equal visual weight. Uses CSS subgrid to align titles and body text across columns. Best for presenting unrelated achievements, focus areas, or standalone points that don't belong in a sequential list.
+
+```html
+<section id="slide10" class="slide layout-statements layout-statements--center">
+  <div class="slide-content">
+    <div class="header">
+      <div class="accent-line"></div>
+      <h2 class="typo-h2">Statements Title</h2>
+      <p class="typo-muted">Optional subtitle</p>
+    </div>
+    <div class="statements">
+      <div class="statement">
+        <h3 class="statement-title">First Statement</h3>
+        <p class="statement-body">Description for the first independent point.</p>
+      </div>
+      <div class="divider"></div>
+      <div class="statement">
+        <h3 class="statement-title">Second Statement</h3>
+        <p class="statement-body">Description for the second independent point.</p>
+      </div>
+      <div class="divider"></div>
+      <div class="statement">
+        <h3 class="statement-title">Third Statement</h3>
+        <p class="statement-body">Description for the third independent point.</p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-number">10 / 10</span>
+</section>
+```
+
+**Text alignment variants:**
+- `layout-statements--center` - Center-aligned text (default, more dramatic)
+- `layout-statements--left` - Left-aligned text (more readable)
+
+**When to use Statements vs Bullets:**
+- Use **Statements** when items are independent and unrelated (e.g., three separate achievements)
+- Use **Bullets** when items form a logical list or sequence (e.g., steps, related points)
 
 ## Workflow
 

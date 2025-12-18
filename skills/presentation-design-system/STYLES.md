@@ -537,6 +537,74 @@ Copy this complete CSS into the `<style>` tag of your presentation.
     font-size: var(--text-lg);
   }
 
+  /* Statements Layout */
+  .layout-statements .slide-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .layout-statements .header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .layout-statements .accent-line {
+    width: 48px;
+    height: 2px;
+    background: var(--accent-primary);
+    border-radius: 1px;
+  }
+
+  .layout-statements .statements {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: var(--space-12);
+    row-gap: var(--space-4);
+    align-items: start;
+    flex: 1;
+    align-content: center;
+  }
+
+  .layout-statements .statement {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+    gap: var(--space-4);
+  }
+
+  .layout-statements .statement-title {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+    color: var(--text-primary);
+    align-self: center;
+  }
+
+  .layout-statements .statement-body {
+    font-size: var(--text-sm);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  .layout-statements .divider {
+    grid-row: span 2;
+    align-self: center;
+    transform: rotate(90deg);
+  }
+
+  .layout-statements--center .statement {
+    text-align: center;
+  }
+
+  .layout-statements--left .statement {
+    text-align: left;
+  }
+
   /* Typography Foundation Elements */
   .typo-section {
     display: flex;
