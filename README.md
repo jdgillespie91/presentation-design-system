@@ -28,7 +28,7 @@ The agent will read the skill files and generate a complete `.html` file you can
 
 ## Example Output
 
-See `design-system.html` for a reference presentation showing all layouts and foundation elements.
+See `reference.html` for a reference presentation showing all layouts and foundation elements.
 
 ## Viewing Presentations
 
