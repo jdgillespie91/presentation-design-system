@@ -51,6 +51,8 @@
         --surface-glass-border: rgba(255, 255, 255, 0.1);
         --surface-glass-hover: rgba(255, 255, 255, 0.08);
         --surface-solid: rgba(15, 10, 31, 0.8);
+        --surface-card: rgba(255, 255, 255, 0.03);
+        --surface-card-border: rgba(255, 255, 255, 0.08);
         
         /* Shadows */
         --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -673,7 +675,7 @@
         font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
         font-size: 0.85rem;
         font-weight: 500;
-        background: var(--surface-glass);
+        background: var(--surface-card);
         padding: 0.2em 0.4em;
         border-radius: var(--radius-sm);
         color: var(--text-primary);
@@ -683,8 +685,8 @@
         font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
         font-size: 0.8rem;
         line-height: 1.6;
-        background: var(--surface-glass);
-        border: 1px solid var(--surface-glass-border);
+        background: var(--surface-card);
+        border: 1px solid var(--surface-card-border);
         padding: var(--space-4);
         border-radius: var(--radius-md);
         color: var(--text-primary);
@@ -800,6 +802,60 @@
       .typo-link:hover {
         color: var(--accent-secondary);
       }
+
+      /* Badge/Tag */
+      .typo-badge {
+        display: inline-flex;
+        align-items: center;
+        font-size: var(--text-xs);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: var(--space-1) var(--space-2);
+        border-radius: var(--radius-sm);
+        background: var(--surface-card);
+        border: 1px solid var(--surface-card-border);
+        color: var(--text-secondary);
+      }
+
+      .typo-badge--accent {
+        background: rgba(167, 139, 250, 0.15);
+        border-color: rgba(167, 139, 250, 0.3);
+        color: var(--accent-primary);
+      }
+
+      .typo-badge--muted {
+        background: transparent;
+        border-color: transparent;
+        color: var(--text-muted);
+      }
+
+      /* Card */
+      .typo-card {
+        background: var(--surface-card);
+        border: 1px solid var(--surface-card-border);
+        border-radius: var(--radius-md);
+        padding: var(--space-6);
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-6);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .typo-card-header {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-1);
+      }
+
+      .typo-card-body {
+        flex: 1;
+      }
+
+      .typo-card-footer {
+        margin-top: auto;
+        padding-top: var(--space-3);
+      }
     }
 
     /* ===========================================
@@ -863,7 +919,7 @@
         <h1 class="typo-h1">Design System</h1>
         <p class="typo-p">Foundations and reusable slide templates</p>
       </div>
-      <span class="slide-number">1 / 19</span>
+      <span class="slide-number">1 / 20</span>
     </section>
 
     <!-- SLIDE 2: Foundations Introduction -->
@@ -874,7 +930,7 @@
         <p class="typo-p">The building blocks of this design system. Typography, colors, and spacing tokens that ensure visual consistency across all slides.</p>
         <p class="typo-p">These foundational elements are used to construct every layout template.</p>
       </div>
-      <span class="slide-number">2 / 19</span>
+      <span class="slide-number">2 / 20</span>
     </section>
 
     <!-- SLIDE 3: Foundation - Typography -->
@@ -912,11 +968,56 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">3 / 19</span>
+      <span class="slide-number">3 / 20</span>
     </section>
 
-    <!-- SLIDE 4: Foundation - Text Elements -->
+    <!-- SLIDE 4: Foundation - Components -->
     <section id="slide4" class="slide layout-two-col">
+      <div class="slide-content">
+        <div class="header">
+          <div class="accent-line"></div>
+          <h2 class="typo-h2">Components</h2>
+          <p class="typo-muted">Badges and cards for structured content</p>
+        </div>
+        <div class="columns">
+          <div class="col-left">
+            <div class="typo-section">
+              <span class="typo-label">badge / tag</span>
+              <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                <span class="typo-badge">Default</span>
+                <span class="typo-badge typo-badge--accent">Accent</span>
+                <span class="typo-badge typo-badge--muted">Muted</span>
+              </div>
+            </div>
+            <div class="typo-section">
+              <span class="typo-label">badges in context</span>
+              <p class="typo-p">Use badges for <span class="typo-badge typo-badge--accent">New</span> features or <span class="typo-badge">Status</span> indicators.</p>
+            </div>
+          </div>
+          <div class="col-right">
+            <div class="typo-section">
+              <span class="typo-label">card</span>
+              <div class="typo-card">
+                <div class="typo-card-header">
+                  <h3 class="typo-h3">Card Title</h3>
+                  <span class="typo-badge typo-badge--accent">Featured</span>
+                </div>
+                <div class="typo-card-body">
+                  <p class="typo-p">Cards group related content with a subtle surface, shadow, and optional header/footer sections.</p>
+                </div>
+                <div class="typo-card-footer">
+                  <span class="typo-muted">Card footer for metadata or actions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="slide-number">4 / 20</span>
+    </section>
+
+    <!-- SLIDE 5: Foundation - Text Elements -->
+    <section id="slide5" class="slide layout-two-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -954,11 +1055,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">4 / 19</span>
+      <span class="slide-number">5 / 20</span>
     </section>
 
-    <!-- SLIDE 5: Foundation - Code & Data -->
-    <section id="slide5" class="slide layout-two-col">
+    <!-- SLIDE 6: Foundation - Code & Data -->
+    <section id="slide6" class="slide layout-two-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -990,11 +1091,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">5 / 19</span>
+      <span class="slide-number">6 / 20</span>
     </section>
 
-    <!-- SLIDE 6: Foundation - Utilities -->
-    <section id="slide6" class="slide layout-two-col">
+    <!-- SLIDE 7: Foundation - Utilities -->
+    <section id="slide7" class="slide layout-two-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1030,43 +1131,43 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">6 / 19</span>
+      <span class="slide-number">7 / 20</span>
     </section>
 
-    <!-- SLIDE 7: Layouts Introduction -->
-    <section id="slide7" class="slide layout-text">
+    <!-- SLIDE 8: Layouts Introduction -->
+    <section id="slide8" class="slide layout-text">
       <div class="slide-content">
         <div class="accent-line"></div>
         <h2 class="typo-h2">Layouts</h2>
         <p class="typo-p">Reusable slide templates designed for common presentation needs. While foundations are individual content pieces, layouts define how those pieces are arranged on a slide.</p>
         <p class="typo-p">Copy any layout and replace the content with your own.</p>
       </div>
-      <span class="slide-number">7 / 19</span>
+      <span class="slide-number">8 / 20</span>
     </section>
 
-    <!-- SLIDE 8: Layout Template - Title -->
-    <section id="slide8" class="slide layout-title">
+    <!-- SLIDE 9: Layout Template - Title -->
+    <section id="slide9" class="slide layout-title">
       <div class="slide-content">
         <div class="accent-line"></div>
         <h1 class="typo-h1">Your Presentation Title</h1>
         <p class="typo-p">Copy this slide and replace with your content</p>
       </div>
-      <span class="slide-number">8 / 19</span>
+      <span class="slide-number">9 / 20</span>
     </section>
 
-    <!-- SLIDE 9: Layout Template - Text -->
-    <section id="slide9" class="slide layout-text">
+    <!-- SLIDE 10: Layout Template - Text -->
+    <section id="slide10" class="slide layout-text">
       <div class="slide-content">
         <div class="accent-line"></div>
         <h2 class="typo-h2">Your Section Title</h2>
         <p class="typo-p">This is the text layout. It centers content vertically while keeping text left-aligned. Ideal for introducing sections, explaining concepts, or presenting key points.</p>
         <p class="typo-p">Copy this slide and replace the title and paragraphs with your own content.</p>
       </div>
-      <span class="slide-number">9 / 19</span>
+      <span class="slide-number">10 / 20</span>
     </section>
 
-    <!-- SLIDE 10: Layout Template - Two Column -->
-    <section id="slide10" class="slide layout-two-col">
+    <!-- SLIDE 11: Layout Template - Two Column -->
+    <section id="slide11" class="slide layout-two-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1084,11 +1185,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">10 / 19</span>
+      <span class="slide-number">11 / 20</span>
     </section>
 
-    <!-- SLIDE 11: Layout Template - Three Column -->
-    <section id="slide11" class="slide layout-three-col">
+    <!-- SLIDE 12: Layout Template - Three Column -->
+    <section id="slide12" class="slide layout-three-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1110,11 +1211,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">11 / 19</span>
+      <span class="slide-number">12 / 20</span>
     </section>
 
-    <!-- SLIDE 12: Layout Template - Image + Text -->
-    <section id="slide12" class="slide layout-image-text">
+    <!-- SLIDE 13: Layout Template - Image + Text -->
+    <section id="slide13" class="slide layout-image-text">
       <div class="slide-content">
         <div class="text-side">
           <div class="accent-line"></div>
@@ -1135,11 +1236,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">12 / 19</span>
+      <span class="slide-number">13 / 20</span>
     </section>
 
-    <!-- SLIDE 13: Layout Template - Image + Text (Reversed) -->
-    <section id="slide13" class="slide layout-image-text layout-image-text--reversed">
+    <!-- SLIDE 14: Layout Template - Image + Text (Reversed) -->
+    <section id="slide14" class="slide layout-image-text layout-image-text--reversed">
       <div class="slide-content">
         <div class="text-side">
           <div class="accent-line"></div>
@@ -1160,11 +1261,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">13 / 19</span>
+      <span class="slide-number">14 / 20</span>
     </section>
 
-    <!-- SLIDE 14: Layout Template - Big Quote -->
-    <section id="slide14" class="slide layout-quote">
+    <!-- SLIDE 15: Layout Template - Big Quote -->
+    <section id="slide15" class="slide layout-quote">
       <div class="slide-content">
         <span class="quote-mark">"</span>
         <blockquote class="typo-blockquote">Design is not just what it looks like and feels like. Design is how it works.</blockquote>
@@ -1173,11 +1274,11 @@
           <span class="typo-p">Co-founder, Apple Inc.</span>
         </div>
       </div>
-      <span class="slide-number">14 / 19</span>
+      <span class="slide-number">15 / 20</span>
     </section>
 
-    <!-- SLIDE 15: Layout Template - Stats/Metrics -->
-    <section id="slide15" class="slide layout-stats">
+    <!-- SLIDE 16: Layout Template - Stats/Metrics -->
+    <section id="slide16" class="slide layout-stats">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1199,11 +1300,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">15 / 19</span>
+      <span class="slide-number">16 / 20</span>
     </section>
 
-    <!-- SLIDE 16: Layout Template - Bullet List -->
-    <section id="slide16" class="slide layout-bullets">
+    <!-- SLIDE 17: Layout Template - Bullet List -->
+    <section id="slide17" class="slide layout-bullets">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1234,21 +1335,21 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">16 / 19</span>
+      <span class="slide-number">17 / 20</span>
     </section>
 
-    <!-- SLIDE 17: Roadmap Introduction -->
-    <section id="slide17" class="slide layout-text">
+    <!-- SLIDE 18: Roadmap Introduction -->
+    <section id="slide18" class="slide layout-text">
       <div class="slide-content">
         <div class="accent-line"></div>
         <h2 class="typo-h2">Roadmap</h2>
         <p class="typo-p">Planned additions to the design system. These are foundations and layouts that would extend the system's capabilities.</p>
       </div>
-      <span class="slide-number">17 / 19</span>
+      <span class="slide-number">18 / 20</span>
     </section>
 
-    <!-- SLIDE 18: Roadmap - Foundations -->
-    <section id="slide18" class="slide layout-three-col">
+    <!-- SLIDE 19: Roadmap - Foundations -->
+    <section id="slide19" class="slide layout-three-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1260,8 +1361,8 @@
             <h3 class="typo-h3">High Priority</h3>
             <ul class="typo-list">
               <li><s>Numbered/ordered list</s></li>
-              <li>Badge/tag component</li>
-              <li>Card component</li>
+              <li><s>Badge/tag component</s></li>
+              <li><s>Card component</s></li>
               <li>Icon placeholder</li>
               <li><s>Stat/metric display</s></li>
             </ul>
@@ -1285,11 +1386,11 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">18 / 19</span>
+      <span class="slide-number">19 / 20</span>
     </section>
 
-    <!-- SLIDE 19: Roadmap - Layouts -->
-    <section id="slide19" class="slide layout-three-col">
+    <!-- SLIDE 20: Roadmap - Layouts -->
+    <section id="slide20" class="slide layout-three-col">
       <div class="slide-content">
         <div class="header">
           <div class="accent-line"></div>
@@ -1326,7 +1427,7 @@
           </div>
         </div>
       </div>
-      <span class="slide-number">19 / 19</span>
+      <span class="slide-number">20 / 20</span>
     </section>
 
   </div>
