@@ -101,6 +101,7 @@ Track your eval runs here.
 
 | Date       | Skill Version | Notes |
 |------------|---------------|-------|
+| 2025-12-18 | `2bb35f5` | Added `layout-statements` layout. New layout works well. Seeing stronger deviation from templates (custom headers, title pages) - some good, some causing slide ordering issues. Consistency lower overall, but where design system is followed correctly, results are improved. May be eval methodology issue (subagent handoff) rather than skill regression. |
 | 2025-12-18 | `c1ddd93` | First run - quick scan only, no per-slide notes. Detailed prompts carried content correctly. Visual similarity across outputs (theming TBD). Limited layout variety - would like more options. Three-col often used where a "three-card" layout (like stats but for text) would be better. Some odd line breaks in single-col layout. |
 
 **Determining skill version:** Use the short hash of the last commit that modified the skill files:
