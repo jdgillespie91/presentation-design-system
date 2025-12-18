@@ -97,8 +97,14 @@ Copy this template for each presentation reviewed:
 
 ## Run Log
 
-Track your eval runs here:
+Track your eval runs here.
+
+**Determining skill version:** Use the short hash of the last commit that modified the skill files:
+
+```bash
+git log -1 --format="%h" -- skills/presentation-design-system/
+```
 
 | Date | Skill Version | Notes |
 |------|---------------|-------|
-| 2025-12-18 | Initial | First run - quick scan only, no per-slide notes. Detailed prompts carried content correctly. Visual similarity across outputs (theming TBD). Limited layout variety - would like more options. Three-col often used where a "three-card" layout (like stats but for text) would be better. Some odd line breaks in single-col layout. |
+| 2025-12-18 | `c1ddd93` | First run - quick scan only, no per-slide notes. Detailed prompts carried content correctly. Visual similarity across outputs (theming TBD). Limited layout variety - would like more options. Three-col often used where a "three-card" layout (like stats but for text) would be better. Some odd line breaks in single-col layout. |
